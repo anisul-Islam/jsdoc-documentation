@@ -46,8 +46,8 @@
       }
       ```
 
-  - step 6: Running JSDoc: `npm run jsdoc`
-  - step 7: a jsdoc folder will be create from where you can find index.html and open it to any browser to navigate the generated documentation
+- step 6: Running JSDoc: `npm run jsdoc`
+- step 7: a jsdoc folder will be create from where you can find index.html and open it to any browser to navigate the generated documentation
 
 ## jsdoc tutorial
 
