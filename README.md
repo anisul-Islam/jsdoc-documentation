@@ -59,7 +59,7 @@
   }
   ```
 
-- variable documentation
+- jadoc documentation
 
   ```javascript
   // variable documentation syntax
