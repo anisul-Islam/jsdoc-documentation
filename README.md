@@ -16,35 +16,35 @@
 - step 2: install jsdoc: `npm install -g jsdoc` or `npm install -D jsdoc`
 - step 4: add the following line of code in package.json
 
-      ```json
-          "scripts" : {
-            "jsdoc" : "jsdoc -c jsdoc.json"
-            // others
-          }
-      ```
+    ```json
+        "scripts" : {
+          "jsdoc" : "jsdoc -c jsdoc.json"
+          // others
+        }
+    ```
 
 - step 5: In the root of the project create jsdoc.json file and add the following codes
 
-      ```json
-      {
-        "plugins": ["plugins/markdown"],
-        "recurseDepth": 10,
-        "source": {
-          "include": ["src"],
-          "includePattern": ".js$",
-          "excludePattern": "(node_modules/|docs)"
-        },
-        "templates": {
-          "cleverLinks": true,
-          "monospaceLinks": true
-        },
-        "opts": {
-          "destination": "./jsdoc",
-          "recurse": true,
-          "readme": "./readme.md"
-        }
+    ```json
+    {
+      "plugins": ["plugins/markdown"],
+      "recurseDepth": 10,
+      "source": {
+        "include": ["src"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules/|docs)"
+      },
+      "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+      },
+      "opts": {
+        "destination": "./jsdoc",
+        "recurse": true,
+        "readme": "./readme.md"
       }
-      ```
+    }
+    ```
 
 - step 6: Running JSDoc: `npm run jsdoc`
 - step 7: a jsdoc folder will be create from where you can find index.html and open it to any browser to navigate the generated documentation
